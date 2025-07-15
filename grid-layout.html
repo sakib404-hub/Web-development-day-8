@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid - Layout</title>
+    <link rel="icon" type="image/x-icon" href="photos/logo.png" />
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 10px;
+      }
+      .box {
+        background-color: rgba(255, 228, 196, 0.507);
+      }
+      #box1 {
+        grid-column: span 4;
+      }
+      #box2 {
+        grid-row: span 2;
+      }
+      #box3 {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+      #box6 {
+        grid-column: span 4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box1">The Header</div>
+      <div class="box" id="box2">navigation</div>
+      <div class="box" id="box3">main article area</div>
+      <div class="box" id="box4">sidebar</div>
+      <div class="box" id="box5">advertisement</div>
+      <div class="box" id="box6">footer</div>
+    </div>
+  </body>
+</html>
